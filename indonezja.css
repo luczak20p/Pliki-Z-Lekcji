@@ -1,0 +1,13 @@
+label {
+    display: block;
+    padding: 5px;
+}
+
+body {
+    font-family: Arial;
+
+}
+
+#wynik {
+    padding: 10px;
+}

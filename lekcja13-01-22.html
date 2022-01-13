@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel=stylesheet href=indonezja.css>
+</head>
+
+<body>
+    <header>
+        <h2>Metody obiektu string</h2>
+    </header>
+    <label for=bob>Podaj przetwarzany tekst: <input id=bob placeholder="Pausechamp"></label>
+    <label for=bob2>Podaj parametry(oddzielone ","): <input id=bob2></label>
+
+    <button>length</button>
+    <button>charAt</button>
+    <button>charCodeAt</button>
+    <button>toUpperCase</button>
+    <button>toLowerCase</button>
+    <button>indexOf</button>
+    <button>lastIndexOf</button>
+    <button>substr</button>
+    <button>substring</button>
+    <button>slice</button>
+    <button>replace</button>
+
+    <div id=wynik></div>
+
+</body>
+
+<script>
+    wynik = document.querySelector('#wynik')
+
+    przetwarzany = document.querySelector('#bob').value
+    parametry = document.querySelector('#bob2').value
+    liczby = parametry.split(",")
+
+    for (x = 0; x <= 10; x++) {
+        document.querySelectorAll('button')[x].addEventListener("click", function () {
+            przetwarzany = document.querySelector('#bob').value
+            parametry = document.querySelector('#bob2').value
+            liczby = parametry.split(",")
+
+        })
+    }
+
+
+    document.querySelectorAll('button')[0].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.length
+    })
+
+    document.querySelectorAll('button')[1].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.charAt(liczby[0] - 1)
+    })
+
+    document.querySelectorAll('button')[2].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.charCodeAt(liczby[0] - 1)
+    })
+
+    document.querySelectorAll('button')[3].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.toUpperCase()
+    })
+
+    document.querySelectorAll('button')[4].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.toLowerCase()
+    })
+
+    document.querySelectorAll('button')[5].addEventListener("click", function () {
+        if (przetwarzany.lastIndexOf(parametry) + 1 == 0) {
+            wynik.innerHTML = "Wynik: Brak"
+        } else wynik.innerHTML = "Wynik: " + (przetwarzany.indexOf(parametry) + 1)
+    })
+
+    document.querySelectorAll('button')[6].addEventListener("click", function () {
+        if (przetwarzany.lastIndexOf(parametry) + 1 == 0) {
+            wynik.innerHTML = "Wynik: Brak"
+        } else wynik.innerHTML = "Wynik: " + (przetwarzany.lastIndexOf(parametry) + 1)
+    })
+
+    document.querySelectorAll('button')[7].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.substr(liczby[0] - 1, liczby[1])
+    })
+
+    document.querySelectorAll('button')[8].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.substring(liczby[0] - 1, liczby[1])
+    })
+
+    document.querySelectorAll('button')[9].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.slice(liczby[0] - 1, liczby[1] - 1)
+    })
+
+    document.querySelectorAll('button')[10].addEventListener("click", function () {
+        wynik.innerHTML = "Wynik: " + przetwarzany.replace(liczby[0], liczby[1])
+    })
+</script>
+
+</html>
