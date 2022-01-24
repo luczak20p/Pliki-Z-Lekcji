@@ -19,7 +19,7 @@ class Student{
     }
 
     public function __clone(){
-        $this->oczy = clone $this->oczy
+        $this->oczy = clone $this->oczy;
     }
 }
 
@@ -41,7 +41,7 @@ $b = clone $a;
 $b->imie='Juan';
 echo $a->imie.'<br>';
 echo $b->imie.'<br>';
-
+$b->oczy->kolor = "niebieskie";
 echo $a->oczy->kolor.'<br>';
 
 echo $b->oczy->kolor.'<br>';
