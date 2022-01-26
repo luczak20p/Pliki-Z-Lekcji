@@ -14,10 +14,11 @@
         <h2>Metody obiektu string</h2>
     </header>
 
-    <main class="shadow m-5 bg-white p-2">
+    <main class="shadow m-5 bg-white p-2 d-flex row">
+        
 
-        <div>
-            <div class="mb-3 ms-2">
+        <div class=col>
+            <div class="mb-3 ms-2 ">
                 <label for=bob class="form-label">Podaj przetwarzany tekst: <input id=bob placeholder="Pausechamp"
                         class="form-control"></label>
 
@@ -27,8 +28,14 @@
                 <label for=bob2 class="form-label">Podaj parametry(oddzielone ","): <input id=bob2
                         class="form-control"></label>
             </div>
-            <div id=wynik>Wynik:</div>
+
+           
+
         </div>
+
+        <div id=wynik class="ms-4 border width col-6">Wynik:</div>
+        
+        
 
         <div class="d-inline-flex flex-column ">
             <button class="m-2 btn btn-success">length</button>
@@ -43,7 +50,11 @@
             <button class="m-2 btn btn-success">slice</button>
             <button class="m-2 btn btn-success">replace</button>
         </div>
+
+        
+        
     </main>
+    
 
 
 </body>
