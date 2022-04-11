@@ -1,0 +1,5 @@
+frameworki i środowiska do php:
+composer
+packagist
+
+(było też o zmiennych środowiskowych)
