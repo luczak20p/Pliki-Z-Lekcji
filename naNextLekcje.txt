@@ -1,0 +1,2 @@
+te pliki trzy.php i cztery.php rozwinąć i umieć opisać słownie
+komentarze w javie + zmienne w javie opisać, przedstawić
