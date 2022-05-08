@@ -45,6 +45,9 @@
  if($piesek->wiek>4){
   echo "Cóż za stary pies";
  }
+ else{
+  echo "ale fajny piesek";
+ }
  $student = new student('Jan','Kowalski','350',2);
  // utworzenie nowej instancji klasy (obiektu)
  $student->displayData();
