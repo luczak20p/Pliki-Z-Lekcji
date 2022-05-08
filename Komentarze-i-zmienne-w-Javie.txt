@@ -1,6 +1,5 @@
 https://www.onlinegdb.com/online_java_compiler
 
-
 Komentarze: 
 //kod - komentarz jednoliniowy
 
@@ -50,4 +49,3 @@ znalazłem też takie coś:
 Scanner inputScanner = new Scanner(System.in);
 inputScanner.nextInt();
 inputScanner.nextDouble();
-
