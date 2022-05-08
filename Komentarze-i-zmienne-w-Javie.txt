@@ -23,6 +23,10 @@ znaki - char
 prawda/fałsz - boolean(skrót bool nie działa)
 ciąg znaków - String(z wielkiej litery)
 
+Każdy z typów prostych ma odpowiadający mu obiekt:
+
+np. Integer i2 = Integer.valueOf(10);
+
 Deklaracja: typ nazwaZmiennej = wartość;
 
 Przykładowa deklaracja:
@@ -41,3 +45,9 @@ Próba przypisania do niej wartości po raz drugi = nie kompiluje się.
 
 final double eulerek=2.71;
 eulerek=8.56;//błąd
+
+znalazłem też takie coś:
+Scanner inputScanner = new Scanner(System.in);
+inputScanner.nextInt();
+inputScanner.nextDouble();
+
