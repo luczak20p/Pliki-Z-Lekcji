@@ -14,3 +14,30 @@ kod
 
 Zmienne:
 
+Deklaracja zmiennych bardzo podobna do C++
+
+Typy danych w zmiennych:
+całkowite - byte, short, int, long
+zmiennoprzecinkowe - float, double(część całkowitą od ułamkowej oddzielamy kropką)
+znaki - char
+prawda/fałsz - boolean(skrót bool nie działa)
+ciąg znaków - String(z wielkiej litery)
+
+Deklaracja: typ nazwaZmiennej = wartość;
+
+Przykładowa deklaracja:
+int age = 19;
+System.out.println("Twój wiek to: " + age);
+
+int numer1, numer2;//(można deklarować zmienne koło siebie)
+numer1=10;
+numer2=numer1;
+System.out.println(numer2);//10
+numer1=20;
+System.out.println(numer2);//wciąż 10
+
+Przed zmienną możesz napisać "final". Zadeklarowana w ten sposób zmienna może być tylko raz zainicjowana i nazywa się zmienną finalną. 
+Próba przypisania do niej wartości po raz drugi = nie kompiluje się.
+
+final double eulerek=2.71;
+eulerek=8.56;//błąd
