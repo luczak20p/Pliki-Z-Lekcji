@@ -1,1 +1,16 @@
 https://www.onlinegdb.com/online_java_compiler
+
+
+Komentarze: 
+//kod - komentarz jednoliniowy
+
+/*
+kod
+*/ - komentarz wieloliniowy
+
+/**
+kod
+*/ - komentarz dokumentacyjny - Jeśli w środowisku programistycznym(np. IntelliJ) wejdziemy w opis metody to zobaczymy tam treść z tego komentarza
+
+Zmienne:
+
