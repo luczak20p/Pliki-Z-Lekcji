@@ -25,8 +25,24 @@
  echo "rok: $this->rok";
  }
  }
+
+ class pies{
+ private $nazwa;
+ private $rasa;
+ public $wiek;
+ public function __construct($nazwa="JohnDoe",$rasa="nieokreślona",$wiek="0"){
+ $this->nazwa=$nazwa;
+ $this->rasa=$rasa;
+ $this->wiek=$wiek;
+ }
+ public function __destruct(){
+ echo "Piesek zdechł";
+ }
+ }
  // program
- $student = new student('Jan','Kowalski','350','2');
+ $piesek = new pies("Marcin","Maltańczyk",2);
+ echo $piesek->wiek;
+ $student = new student('Jan','Kowalski','350',2);
  // utworzenie nowej instancji klasy (obiektu)
  $student->displayData();
  ?>
