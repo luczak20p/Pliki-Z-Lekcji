@@ -49,3 +49,12 @@ znalazłem też takie coś:
 Scanner inputScanner = new Scanner(System.in);
 inputScanner.nextInt();
 inputScanner.nextDouble();
+
+przykład zastosowania tego Scanner:
+
+double[] temperature = new double[7];
+Scanner inputScanner = new Scanner(System.in);
+for(int i = 0; i < temperature.length; i++) {
+       System.out.println("Wprowadź liczbę " + i);
+       temperature[i] = inputScanner.nextDouble();
+}
