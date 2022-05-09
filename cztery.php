@@ -67,6 +67,9 @@ echo "nazwisko: $this->nazwisko<br/>";
 echo "pozycja: $this->pozycja<br/><br/>";
 echo "dzial: $this->dzial<br/><br/>";
 }
+public function getPozycja(){
+return $this->pozycja;
+}
 }
 // program
 $student=new student('Jan','Kowalski','350','A01');
@@ -75,4 +78,7 @@ $profesor=new profesor('Stefan','Nowak','Informatyka Stosowana');
 $profesor->displayData();
 $sprzedawca=new sprzedawca('Marcin','Małpa','Menedżer','Marketing');
 $sprzedawca->displayData();
+if($sprzedawca->getPozycja()=='Menedżer'){
+echo "Jesteś menedżerem";
+}
 ?>
