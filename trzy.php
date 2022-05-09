@@ -30,7 +30,7 @@
  private $nazwa;
  private $rasa;
  public $wiek;
- public function __construct($nazwa="JohnDoe",$rasa="nieokreślona",$wiek="0"){
+ public function __construct($nazwa="JohnDoe",$rasa="nieokreślona",$wiek=0){
  $this->nazwa=$nazwa;
  $this->rasa=$rasa;
  $this->wiek=$wiek;
@@ -43,10 +43,10 @@
  $piesek = new pies("Marcin","Maltańczyk",2);
  echo $piesek->wiek;
  if($piesek->wiek>4){
-  echo "Cóż za stary pies";
+  echo "Ale stary pies";
  }
  else{
-  echo "ale fajny piesek";
+  echo "Ale fajny piesek";
  }
  $student = new student('Jan','Kowalski','350',2);
  // utworzenie nowej instancji klasy (obiektu)
