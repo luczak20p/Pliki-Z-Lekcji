@@ -1,6 +1,0 @@
-frameworki i środowiska do php:
-composer
-packagist
-symfony(framework)
-
-(było też o zmiennych środowiskowych)
